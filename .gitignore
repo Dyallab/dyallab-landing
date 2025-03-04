@@ -29,3 +29,7 @@ dist-ssr
 # others
 .bolt/
 .astro/
+
+# playwright
+playwright-report/
+test-results/

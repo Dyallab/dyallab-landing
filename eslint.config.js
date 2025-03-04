@@ -1,23 +1,12 @@
-import js from '@eslint/js';
-import globals from 'globals';
-import tseslint from 'typescript-eslint';
-
-export default tseslint.config(
-  { ignores: ['dist'] },
+import eslintPluginAstro from 'eslint-plugin-astro';
+export default [
+  // add more generic rule sets here, such as:
+  // js.configs.recommended,
+  ...eslintPluginAstro.configs.recommended,
   {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
-    files: ['**/*.{ts,tsx}'],
-    languageOptions: {
-      ecmaVersion: 2020,
-      globals: globals.browser,
-    },
-    plugins: {},
     rules: {
-      ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': [
-        'warn',
-        { allowConstantExport: true },
-      ],
-    },
+      // override/add rules settings here, such as:
+      // "astro/no-set-html-directive": "error"
+    }
   }
-);
+];
