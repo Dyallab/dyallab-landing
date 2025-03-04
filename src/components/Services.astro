@@ -1,0 +1,166 @@
+---
+import { Cloud, Workflow, Code, Archive, Users, FileText, ChevronRight } from 'lucide-astro';
+---
+
+<section id="services" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-16">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        We offer comprehensive solutions to optimize your technology infrastructure and improve your development processes
+      </p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
+          <Cloud class="h-8 w-8 text-indigo-600" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Infrastructure Management</h3>
+        <p class="text-gray-600 mb-4">
+          We optimize your infrastructure both on-premise and in the cloud to maximize performance and reduce costs.
+        </p>
+        <ul class="text-gray-600 space-y-2">
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Cloud migration</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Resource optimization</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Monitoring and alerts</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Service 2 -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
+          <Workflow class="h-8 w-8 text-indigo-600" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Development Cycle Improvements</h3>
+        <p class="text-gray-600 mb-4">
+          We optimize your development process to deliver quality software faster and more efficiently.
+        </p>
+        <ul class="text-gray-600 space-y-2">
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Test automation</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Continuous integration</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Continuous delivery</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Service 3 -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
+          <Code class="h-8 w-8 text-indigo-600" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">DevOps Practices Integration</h3>
+        <p class="text-gray-600 mb-4">
+          We implement DevOps methodologies to improve team collaboration and accelerate delivery time.
+        </p>
+        <ul class="text-gray-600 space-y-2">
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>DevOps culture</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Process automation</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Infrastructure as code</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Service 4 -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
+          <Archive class="h-8 w-8 text-indigo-600" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Architecture Solutions</h3>
+        <p class="text-gray-600 mb-4">
+          We design scalable and robust architectures that adapt to the specific needs of your business.
+        </p>
+        <ul class="text-gray-600 space-y-2">
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Microservices</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Cloud-native architectures</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Distributed systems design</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Service 5 -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
+          <Users class="h-8 w-8 text-indigo-600" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Team Training</h3>
+        <p class="text-gray-600 mb-4">
+          We train your team in the latest technologies and methodologies to enhance their performance.
+        </p>
+        <ul class="text-gray-600 space-y-2">
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Technical workshops</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Training in new technologies</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Personalized mentoring</span>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Service 6 -->
+      <div class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
+          <FileText class="h-8 w-8 text-indigo-600" />
+        </div>
+        <h3 class="text-xl font-bold text-gray-800 mb-3">Technical Documentation</h3>
+        <p class="text-gray-600 mb-4">
+          We create clear and detailed documentation to facilitate the maintenance and evolution of your systems.
+        </p>
+        <ul class="text-gray-600 space-y-2">
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>API documentation</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Technical manuals</span>
+          </li>
+          <li class="flex items-start">
+            <ChevronRight class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5" />
+            <span>Architecture guides</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

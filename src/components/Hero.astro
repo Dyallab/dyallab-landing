@@ -1,0 +1,33 @@
+---
+import { ChevronRight } from 'lucide-astro';
+---
+
+<section class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white py-20">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-col md:flex-row items-center">
+      <div class="md:w-1/2 mb-10 md:mb-0">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Technology Solutions for Your Business
+        </h1>
+        <p class="text-xl mb-8">
+          Software development and infrastructure to take your company to the next level
+        </p>
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+          <a 
+            href="#services" 
+            class="bg-white text-indigo-600 px-6 py-3 rounded-md font-medium hover:bg-gray-100 transition-colors flex items-center justify-center"
+          >
+            Our Services
+            <ChevronRight class="ml-2 h-5 w-5" />
+          </a>
+          <a 
+            href="#contact" 
+            class="bg-transparent border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:text-indigo-600 transition-colors flex items-center justify-center"
+          >
+            Let's Talk
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
