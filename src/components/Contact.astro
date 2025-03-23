@@ -106,3 +106,26 @@ import { Mail, MapPin, Linkedin, Github } from "lucide-astro";
     </div>
   </div>
 </section>
+
+<script>
+  const form = document.querySelector("form");
+  const name = document.getElementById("name").innerText;
+  const email = document.getElementById("email").innerText;
+  const subject = document.getElementById("subject").innerText;
+  const message = document.getElementById("message").innerText;
+
+  function sendEmail() {
+    const mailtoLink = `mailto:contact@dyallab.com.ar?subject=${encodeURIComponent(
+      subject,
+    )}&body=${encodeURIComponent(
+      `Name: ${name}\nEmail: ${email}\n\n${message}`,
+    )}`;
+
+    window.location.href = mailtoLink;
+  }
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    sendEmail();
+  });
+</script>
