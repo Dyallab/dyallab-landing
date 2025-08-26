@@ -47,7 +47,7 @@ import { Mail, MapPin, Linkedin, Github } from "lucide-astro";
       </div>
 
       <div class="md:w-1/2 md:pl-12">
-        <form class="bg-white p-8 rounded-lg shadow-md">
+        <form id="contactForm" class="bg-white p-8 rounded-lg shadow-md">
           <div class="mb-6">
             <label for="name" class="block text-gray-700 font-medium mb-2"
               >Name</label
@@ -108,7 +108,7 @@ import { Mail, MapPin, Linkedin, Github } from "lucide-astro";
 </section>
 
 <script>
-  const form = document.querySelector("form");
+  const form = document.getElementById("contactForm");
   const name = document.getElementById("name").innerText;
   const email = document.getElementById("email").innerText;
   const subject = document.getElementById("subject").innerText;
