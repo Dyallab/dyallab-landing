@@ -1,0 +1,40 @@
+---
+const clients = [
+  { name: "Inti", image: "/images/inti.png" },
+  { name: "IoT In Motion", image: "/images/iot.png" },
+  { name: "UNLP", image: "/images/unlp.png" },
+  {
+    name: "Biblioteca Maria Adriana Casajus",
+    image: "/images/maria-adriana-casajus.png",
+  },
+];
+
+const numClients = clients.length;
+---
+
+<section class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Trusted Us</h2>
+    <div class="relative overflow-hidden">
+      <div
+        id="clients-slider-container"
+        class="flex transition-transform duration-500 ease-in-out"
+      >
+        {
+          clients.map((client) => (
+            <div
+              class="flex-shrink-0 p-0"
+              style={`flex-basis: calc(100% / ${numClients});`}
+            >
+              <img
+                src={client.image}
+                alt={client.name}
+                class="mx-auto h-24 object-contain"
+              />
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>
