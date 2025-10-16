@@ -21,7 +21,7 @@ describe('Index Page', () => {
     });
 
     test('the page has a title', async () => {
-        await expect(page).toHaveTitle('Dyallab | Start small grow big');
+        await expect(page).toHaveTitle('Dyallab | Your growth, engineered');
     });
 
 })

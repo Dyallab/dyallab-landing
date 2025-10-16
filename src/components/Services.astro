@@ -4,17 +4,42 @@ import {
   Workflow,
   Code,
   Archive,
-  Users,
   FileText,
-  ChevronRight,
+  ArrowRight,
 } from "lucide-astro";
 ---
 
-<section id="services" class="py-20 bg-gray-50">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Services</h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+<section
+  id="services"
+  class="py-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-800 relative overflow-hidden"
+>
+  <!-- Background decoration -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div
+      class="absolute top-20 left-10 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"
+    >
+    </div>
+    <div
+      class="absolute bottom-20 right-10 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"
+    >
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center mb-20">
+      <div
+        class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full font-semibold text-sm mb-6 border border-white/20"
+      >
+        <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+        WHAT WE OFFER
+      </div>
+      <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-6">
+        Our <span
+          class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+          >Services</span
+        >
+      </h2>
+      <p class="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
         We provide smart, human-centered solutions to boost your technology and
         streamline your development.
       </p>
@@ -23,183 +48,261 @@ import {
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Service 1 -->
       <div
-        class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        class="group bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500 hover:-translate-y-2"
       >
-        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
-          <Cloud class="h-8 w-8 text-indigo-600" />
+        <div class="relative">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg"
+          >
+            <Cloud class="h-8 w-8 text-white" />
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-4">Infrastructure</h3>
+
+          <p class="text-gray-200 mb-6 leading-relaxed">
+            We manage and optimize your infrastructure, both on-premise and in
+            the cloud, ensuring stability, performance, and cost efficiency.
+          </p>
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></div>
+              Server Administration
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></div>
+              Network Configuration
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-cyan-400 rounded-full mr-3"></div>
+              System Maintenance
+            </li>
+          </ul>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center text-cyan-400 font-semibold group-hover:gap-2 transition-all duration-300"
+          >
+            Learn more
+            <ArrowRight
+              class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform"
+            />
+          </a>
         </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">Infrastructure</h3>
-        <p class="text-gray-600 mb-4">
-          We manage and optimize your infrastructure, both on-premise and in the
-          cloud, ensuring stability, performance, and cost efficiency.
-        </p>
-        <ul class="text-gray-600 space-y-2">
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Server Administration</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Network Configuration</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>System Maintenance</span>
-          </li>
-        </ul>
       </div>
 
       <!-- Service 2 -->
       <div
-        class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        class="group bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500 hover:-translate-y-2"
       >
-        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
-          <Workflow class="h-8 w-8 text-indigo-600" />
+        <div class="relative">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg"
+          >
+            <Workflow class="h-8 w-8 text-white" />
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-4">
+            Application Security
+          </h3>
+
+          <p class="text-gray-200 mb-6 leading-relaxed">
+            We enhance your software's resilience by integrating product
+            security practices like threat modeling, DevSecOps, and
+            comprehensive penetration testing.
+          </p>
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+              Threat Modeling
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+              DevSecOps Tooling
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-purple-400 rounded-full mr-3"></div>
+              Penetration Testing
+            </li>
+          </ul>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center text-purple-400 font-semibold group-hover:gap-2 transition-all duration-300"
+          >
+            Learn more
+            <ArrowRight
+              class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform"
+            />
+          </a>
         </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">
-          Application Security
-        </h3>
-        <p class="text-gray-600 mb-4">
-          We enhance your software's resilience by integrating product security
-          practices like threat modeling, DevSecOps, and comprehensive
-          penetration testing.
-        </p>
-        <ul class="text-gray-600 space-y-2">
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Threat Modeling</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>DevSecOps Tooling</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Penetration Testing</span>
-          </li>
-        </ul>
       </div>
 
       <!-- Service 3 -->
       <div
-        class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        class="group bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500 hover:-translate-y-2"
       >
-        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
-          <Code class="h-8 w-8 text-indigo-600" />
+        <div class="relative">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg"
+          >
+            <Code class="h-8 w-8 text-white" />
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-4">
+            DevOps & DevSecOps Culture
+          </h3>
+
+          <p class="text-gray-200 mb-6 leading-relaxed">
+            We integrate DevOps and DevSecOps methodologies to improve
+            collaboration, accelerate delivery, and embed security throughout
+            your development lifecycle.
+          </p>
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3"></div>
+              Security Automation
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3"></div>
+              Compliance as Code
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-blue-400 rounded-full mr-3"></div>
+              CI/CD Security
+            </li>
+          </ul>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center text-blue-400 font-semibold group-hover:gap-2 transition-all duration-300"
+          >
+            Learn more
+            <ArrowRight
+              class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform"
+            />
+          </a>
         </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">
-          DevOps & DevSecOps Culture
-        </h3>
-        <p class="text-gray-600 mb-4">
-          We integrate DevOps and DevSecOps methodologies to improve
-          collaboration, accelerate delivery, and embed security throughout your
-          development lifecycle.
-        </p>
-        <ul class="text-gray-600 space-y-2">
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Security Automation</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Compliance as Code</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>CI/CD Security</span>
-          </li>
-        </ul>
       </div>
 
       <!-- Service 4 -->
       <div
-        class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        class="group bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500 hover:-translate-y-2"
       >
-        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
-          <Archive class="h-8 w-8 text-indigo-600" />
+        <div class="relative">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-emerald-400 to-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg"
+          >
+            <Archive class="h-8 w-8 text-white" />
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-4">
+            Architecture Solutions
+          </h3>
+
+          <p class="text-gray-200 mb-6 leading-relaxed">
+            We design scalable and robust architectures that adapt to the
+            specific needs of your business.
+          </p>
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></div>
+              Microservices
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></div>
+              Event-driven architecture
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-emerald-400 rounded-full mr-3"></div>
+              Distributed systems design
+            </li>
+          </ul>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center text-emerald-400 font-semibold group-hover:gap-2 transition-all duration-300"
+          >
+            Learn more
+            <ArrowRight
+              class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform"
+            />
+          </a>
         </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">
-          Architecture Solutions
-        </h3>
-        <p class="text-gray-600 mb-4">
-          We design scalable and robust architectures that adapt to the specific
-          needs of your business.
-        </p>
-        <ul class="text-gray-600 space-y-2">
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Microservices</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Event-driven architecture</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Distributed systems design</span>
-          </li>
-        </ul>
       </div>
 
-      <!-- Service 6 -->
+      <!-- Service 5 -->
       <div
-        class="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        class="group bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20 hover:bg-white/20 transition-all duration-500 hover:-translate-y-2 md:col-span-2 lg:col-span-1"
       >
-        <div class="p-4 bg-indigo-100 rounded-full inline-block mb-4">
-          <FileText class="h-8 w-8 text-indigo-600" />
+        <div class="relative">
+          <div
+            class="w-16 h-16 bg-gradient-to-br from-pink-400 to-rose-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 group-hover:rotate-6 transition-all duration-300 shadow-lg"
+          >
+            <FileText class="h-8 w-8 text-white" />
+          </div>
+
+          <h3 class="text-2xl font-bold text-white mb-4">
+            AI & Software Development
+          </h3>
+
+          <p class="text-gray-200 mb-6 leading-relaxed">
+            We develop intelligent solutions, from custom software to AI agents,
+            leveraging cutting-edge technologies to meet your business needs.
+          </p>
+
+          <ul class="space-y-3 mb-6">
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-pink-400 rounded-full mr-3"></div>
+              AI Agents & Chatbots
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-pink-400 rounded-full mr-3"></div>
+              MCP & Guardrails Implementation
+            </li>
+            <li class="flex items-center text-gray-200">
+              <div class="w-1.5 h-1.5 bg-pink-400 rounded-full mr-3"></div>
+              Custom Software Development
+            </li>
+          </ul>
+
+          <a
+            href="#contact"
+            class="inline-flex items-center text-pink-400 font-semibold group-hover:gap-2 transition-all duration-300"
+          >
+            Learn more
+            <ArrowRight
+              class="h-4 w-4 ml-1 group-hover:translate-x-1 transition-transform"
+            />
+          </a>
         </div>
-        <h3 class="text-xl font-bold text-gray-800 mb-3">
-          AI & Software Development
-        </h3>
-        <p class="text-gray-600 mb-4">
-          We develop intelligent solutions, from custom software to AI agents,
-          leveraging cutting-edge technologies to meet your business needs.
-        </p>
-        <ul class="text-gray-600 space-y-2">
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>AI Agents & Chatbots</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>MCP & Guardrails Implementation</span>
-          </li>
-          <li class="flex items-start">
-            <ChevronRight
-              class="h-5 w-5 text-indigo-600 mr-2 flex-shrink-0 mt-0.5"
-            />
-            <span>Custom Software Development</span>
-          </li>
-        </ul>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  @keyframes blob {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+</style>

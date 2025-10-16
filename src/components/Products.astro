@@ -1,94 +1,225 @@
-<section id="products" class="py-20 bg-white">
-  <div class="container mx-auto px-4">
-    <div class="text-center mb-16">
-      <h2 class="text-3xl font-bold text-gray-800 mb-4">Our Products</h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+---
+
+---
+
+<section
+  id="products"
+  class="py-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-800 relative overflow-hidden"
+>
+  <!-- Background decoration -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div
+      class="absolute top-1/4 left-1/4 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"
+    >
+    </div>
+    <div
+      class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"
+    >
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center mb-20">
+      <div
+        class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full font-semibold text-sm mb-6 border border-white/20"
+      >
+        <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+        OUR PRODUCTS
+      </div>
+
+      <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-6">
+        Innovative <span
+          class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+          >Solutions</span
+        >
+      </h2>
+
+      <p class="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
         Discover our innovative solutions designed to enhance your digital
         experience.
       </p>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
+    >
       <!-- Product 1: Dyabox -->
       <div
-        class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        class="group bg-white/10 backdrop-blur-lg rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-2 border border-white/20"
       >
-        <img
-          src="/dyabox-logo.png"
-          alt="Dyabox Logo"
-          class="h-20 w-20 mx-auto mb-4"
-        />
-        <h3 class="text-2xl font-bold text-gray-800 text-center mb-3">
-          Dyabox
-        </h3>
-        <p class="text-gray-600 text-center mb-4">
-          Your portal to the golden age of retro gaming. Relive the classics
-          with our all-in-one entertainment system.
-        </p>
-        <div class="text-center">
+        <div
+          class="relative h-48 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"
+          >
+          </div>
+          <img
+            src="/dyabox-logo.png"
+            alt="Dyabox Logo"
+            class="h-24 w-24 relative z-10 drop-shadow-2xl group-hover:scale-110 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"
+          >
+          </div>
+        </div>
+
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-white mb-3">Dyabox</h3>
+          <p class="text-gray-200 mb-6 leading-relaxed">
+            Your portal to the golden age of retro gaming. Relive the classics
+            with our all-in-one entertainment system.
+          </p>
+
           <a
             href="https://dyabox.dyallab.com.ar"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-indigo-600 hover:underline font-semibold"
+            class="inline-flex items-center gap-2 text-cyan-400 font-semibold group-hover:gap-3 transition-all duration-300"
           >
             Learn More
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
           </a>
         </div>
       </div>
 
       <!-- Product 2: MainHost -->
       <div
-        class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        class="group bg-white/10 backdrop-blur-lg rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-2 border border-white/20"
       >
-        <img
-          src="/mainhost-logo.png"
-          alt="MainHost Logo"
-          class="h-20 w-20 mx-auto mb-4"
-        />
-        <h3 class="text-2xl font-bold text-gray-800 text-center mb-3">
-          MainHost
-        </h3>
-        <p class="text-gray-600 text-center mb-4">
-          High-performance, freemium hosting for your gaming servers. Launch
-          Minecraft & TeamSpeak servers in under 60 seconds.
-        </p>
-        <div class="text-center">
+        <div
+          class="relative h-48 bg-gradient-to-br from-blue-500 to-cyan-600 flex items-center justify-center overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"
+          >
+          </div>
+          <img
+            src="/mainhost-logo.png"
+            alt="MainHost Logo"
+            class="h-24 w-24 relative z-10 drop-shadow-2xl group-hover:scale-110 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"
+          >
+          </div>
+        </div>
+
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-white mb-3">MainHost</h3>
+          <p class="text-gray-200 mb-6 leading-relaxed">
+            High-performance, freemium hosting for your gaming servers. Launch
+            Minecraft & TeamSpeak servers in under 60 seconds.
+          </p>
+
           <a
             href="https://mainhost.dyallab.com.ar"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-indigo-600 hover:underline font-semibold"
+            class="inline-flex items-center gap-2 text-blue-400 font-semibold group-hover:gap-3 transition-all duration-300"
           >
             Learn More
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
           </a>
         </div>
       </div>
 
+      <!-- Product 3: Eventitos -->
       <div
-        class="bg-gray-50 p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+        class="group bg-white/10 backdrop-blur-lg rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-500 overflow-hidden hover:-translate-y-2 border border-white/20"
       >
-        <img
-          src="/eventitos-logo.png"
-          alt="Eventitos Logo"
-          class="h-20 w-20 mx-auto mb-4"
-        />
-        <h3 class="text-2xl font-bold text-gray-800 text-center mb-3">
-          Eventitos
-        </h3>
-        <p class="text-gray-600 text-center mb-4">
-          A platform for people to add and search for local events.
-        </p>
-        <div class="text-center">
+        <div
+          class="relative h-48 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center overflow-hidden"
+        >
+          <div
+            class="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-300"
+          >
+          </div>
+          <img
+            src="/eventitos-logo.png"
+            alt="Eventitos Logo"
+            class="h-24 w-24 relative z-10 drop-shadow-2xl group-hover:scale-110 transition-transform duration-300"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-white/20 to-transparent"
+          >
+          </div>
+        </div>
+
+        <div class="p-8">
+          <h3 class="text-2xl font-bold text-white mb-3">Eventitos</h3>
+          <p class="text-gray-200 mb-6 leading-relaxed">
+            A platform for people to add and search for local events.
+          </p>
+
           <a
             href="https://eventitos.dyallab.com.ar/"
             target="_blank"
             rel="noopener noreferrer"
-            class="text-indigo-600 hover:underline font-semibold"
+            class="inline-flex items-center gap-2 text-pink-400 font-semibold group-hover:gap-3 transition-all duration-300"
           >
             Learn More
+            <svg
+              class="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+            </svg>
           </a>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  @keyframes blob {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+</style>

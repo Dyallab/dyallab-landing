@@ -1,114 +1,185 @@
 ---
-import { Mail, MapPin, Linkedin, Github } from "lucide-astro";
+import { Mail, MapPin, Linkedin, Github, Send } from "lucide-astro";
 ---
 
-<section id="contact" class="py-20">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-col md:flex-row">
-      <div class="md:w-1/2 mb-10 md:mb-0">
-        <h2 class="text-3xl font-bold text-gray-800 mb-6">Contact Us</h2>
-        <p class="text-gray-600 mb-8">
-          We're here to help you. Contact us and let's build together.
-        </p>
+<section
+  id="contact"
+  class="py-24 bg-gradient-to-br from-indigo-900 via-purple-900 to-indigo-800 text-white relative overflow-hidden"
+>
+  <!-- Animated background elements -->
+  <div class="absolute inset-0 overflow-hidden">
+    <div
+      class="absolute top-20 left-10 w-96 h-96 bg-purple-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob"
+    >
+    </div>
+    <div
+      class="absolute top-40 right-10 w-96 h-96 bg-indigo-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-2000"
+    >
+    </div>
+    <div
+      class="absolute -bottom-8 left-1/2 w-96 h-96 bg-pink-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob animation-delay-4000"
+    >
+    </div>
+  </div>
 
+  <div class="container mx-auto px-4 relative z-10">
+    <div class="text-center mb-16">
+      <div
+        class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full font-semibold text-sm mb-6 border border-white/20"
+      >
+        <span class="w-2 h-2 bg-cyan-400 rounded-full animate-pulse"></span>
+        GET IN TOUCH
+      </div>
+
+      <h2 class="text-5xl md:text-6xl font-extrabold mb-6">
+        Let's Work <span
+          class="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent"
+          >Together</span
+        >
+      </h2>
+
+      <p class="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed">
+        We're here to help you. Contact us and let's build together.
+      </p>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-12 max-w-6xl mx-auto">
+      <!-- Contact Info -->
+      <div class="lg:w-2/5 space-y-8">
         <div class="space-y-6">
-          <div class="flex items-start">
-            <Mail class="h-6 w-6 text-indigo-600 mr-4 flex-shrink-0 mt-1" />
-            <div>
-              <h4 class="font-bold text-gray-800 mb-1">Email</h4>
-              <p class="text-gray-600">contact@dyallab.com.ar</p>
+          <div
+            class="group bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+              >
+                <Mail class="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <h4 class="font-bold text-lg mb-1">Email</h4>
+                <p class="text-gray-300">contact@dyallab.com.ar</p>
+              </div>
             </div>
           </div>
 
-          <div class="flex items-start">
-            <MapPin class="h-6 w-6 text-indigo-600 mr-4 flex-shrink-0 mt-1" />
-            <div>
-              <h4 class="font-bold text-gray-800 mb-1">Location</h4>
-              <p class="text-gray-600">Buenos Aires, Argentina</p>
+          <div
+            class="group bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 hover:bg-white/10 transition-all duration-300"
+          >
+            <div class="flex items-start gap-4">
+              <div
+                class="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-500 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform"
+              >
+                <MapPin class="h-6 w-6 text-white" />
+              </div>
+              <div>
+                <h4 class="font-bold text-lg mb-1">Location</h4>
+                <p class="text-gray-300">Buenos Aires, Argentina</p>
+              </div>
             </div>
           </div>
+        </div>
 
-          <div class="flex space-x-4 mt-8">
+        <div
+          class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10"
+        >
+          <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+          <div class="flex gap-4">
             <a
               href="https://www.linkedin.com/company/dyallab/"
-              class="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors"
+              class="group w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 border border-white/20"
             >
-              <Linkedin class="h-5 w-5 text-gray-700" />
+              <Linkedin
+                class="h-5 w-5 text-gray-200 group-hover:text-white group-hover:scale-110 transition-all"
+              />
             </a>
             <a
               href="https://github.com/dyallab"
-              class="bg-gray-100 p-3 rounded-full hover:bg-gray-200 transition-colors"
+              class="group w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 border border-white/20"
             >
-              <Github class="h-5 w-5 text-gray-700" />
+              <Github
+                class="h-5 w-5 text-gray-200 group-hover:text-white group-hover:scale-110 transition-all"
+              />
             </a>
           </div>
         </div>
       </div>
 
-      <div class="md:w-1/2 md:pl-12">
-        <form id="contactForm" class="bg-white p-8 rounded-lg shadow-md">
-          <div class="mb-6">
-            <label for="name" class="block text-gray-700 font-medium mb-2"
-              >Name</label
+      <!-- Contact Form -->
+      <div class="lg:w-3/5">
+        <form
+          id="contactForm"
+          class="bg-white/10 backdrop-blur-lg p-8 rounded-3xl border border-white/20 shadow-2xl"
+        >
+          <div class="space-y-6">
+            <div>
+              <label for="name" class="block text-white font-medium mb-2"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all"
+                placeholder="Your name"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="email" class="block text-white font-medium mb-2"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="subject" class="block text-white font-medium mb-2"
+                >Subject</label
+              >
+              <input
+                type="text"
+                id="subject"
+                class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all"
+                placeholder="How can we help you?"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="message" class="block text-white font-medium mb-2"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                rows="5"
+                class="w-full px-4 py-3 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all resize-none"
+                placeholder="Tell us more about your project..."
+                required></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-gradient-to-r from-cyan-400 to-blue-500 text-white px-8 py-4 rounded-xl font-bold hover:from-cyan-500 hover:to-blue-600 transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 flex items-center justify-center gap-2"
             >
-            <input
-              type="text"
-              id="name"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="Your name"
-            />
-          </div>
+              Send Message
+              <Send class="h-5 w-5" />
+            </button>
 
-          <div class="mb-6">
-            <label for="email" class="block text-gray-700 font-medium mb-2"
-              >Email</label
+            <a
+              href="https://calendly.com/dyallo/discovery-call"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-full block text-center bg-white/10 backdrop-blur-sm border border-white/20 text-white px-8 py-4 rounded-xl font-bold hover:bg-white/20 transition-all duration-300"
             >
-            <input
-              type="email"
-              id="email"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="contact@dyallab.com.ar"
-            />
+              Schedule a Call
+            </a>
           </div>
-
-          <div class="mb-6">
-            <label for="subject" class="block text-gray-700 font-medium mb-2"
-              >Subject</label
-            >
-            <input
-              type="text"
-              id="subject"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="How can we help you?"
-            />
-          </div>
-
-          <div class="mb-6">
-            <label for="message" class="block text-gray-700 font-medium mb-2"
-              >Message</label
-            >
-            <textarea
-              id="message"
-              rows="4"
-              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
-              placeholder="Tell us more about your project..."></textarea>
-          </div>
-
-          <button
-            type="submit"
-            class="w-full bg-indigo-600 text-white px-6 py-3 rounded-md font-medium hover:bg-indigo-700 transition-colors"
-          >
-            Send Message
-          </button>
-
-          <a
-            href="https://calendly.com/dyallo/discovery-call"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="w-full block text-center bg-gray-200 text-gray-800 px-6 py-3 mt-4 rounded-md font-medium hover:bg-gray-300 transition-colors"
-          >
-            Schedule a Call
-          </a>
         </form>
       </div>
     </div>
@@ -116,13 +187,20 @@ import { Mail, MapPin, Linkedin, Github } from "lucide-astro";
 </section>
 
 <script>
-  const form = document.getElementById("contactForm");
-  const name = document.getElementById("name").innerText;
-  const email = document.getElementById("email").innerText;
-  const subject = document.getElementById("subject").innerText;
-  const message = document.getElementById("message").innerText;
+  const form = document.getElementById("contactForm") as HTMLFormElement;
+  const nameInput = document.getElementById("name") as HTMLInputElement;
+  const emailInput = document.getElementById("email") as HTMLInputElement;
+  const subjectInput = document.getElementById("subject") as HTMLInputElement;
+  const messageInput = document.getElementById(
+    "message",
+  ) as HTMLTextAreaElement;
 
   function sendEmail() {
+    const name = nameInput.value;
+    const email = emailInput.value;
+    const subject = subjectInput.value;
+    const message = messageInput.value;
+
     const mailtoLink = `mailto:contact@dyallab.com.ar?subject=${encodeURIComponent(
       subject,
     )}&body=${encodeURIComponent(
@@ -137,3 +215,30 @@ import { Mail, MapPin, Linkedin, Github } from "lucide-astro";
     sendEmail();
   });
 </script>
+
+<style>
+  @keyframes blob {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+</style>
