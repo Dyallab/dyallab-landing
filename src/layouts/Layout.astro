@@ -6,7 +6,7 @@ interface Props {
 
 const {
   title,
-  description = "Software development and infrastructure solutions to take your business to the next level",
+  description = "Dyallab helps businesses thrive with expert solutions in technology infrastructure, secure applications, efficient development, innovative AI, and custom software.",
 } = Astro.props;
 ---
 
@@ -15,9 +15,13 @@ const {
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/dyallab-logo-transparent.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/dyallab-logo.png" />
+    <meta property="og:url" content={Astro.url.href} />
     <title>{title}</title>
   </head>
   <body>
