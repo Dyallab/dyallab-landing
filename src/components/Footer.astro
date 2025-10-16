@@ -1,75 +1,158 @@
 ---
-import { Code, Linkedin, Github } from "lucide-astro";
+import { Linkedin, Github, Mail } from "lucide-astro";
 
 const currentYear = new Date().getFullYear();
 ---
 
-<footer class="bg-gray-800 text-white py-12">
-  <div class="container mx-auto px-4">
-    <div class="flex flex-col md:flex-row justify-between">
-      <div class="mb-8 md:mb-0">
-        <div class="flex items-center space-x-2 mb-4">
-          <Code class="h-8 w-8 text-indigo-400" />
-          <span class="text-2xl font-bold">Dyallab</span>
+<footer
+  class="bg-gradient-to-br from-gray-900 via-indigo-900 to-gray-900 text-white relative overflow-hidden"
+>
+  <!-- Background decoration -->
+  <div class="absolute inset-0 opacity-10">
+    <div
+      class="absolute top-0 left-0 w-96 h-96 bg-indigo-500 rounded-full filter blur-3xl"
+    >
+    </div>
+    <div
+      class="absolute bottom-0 right-0 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl"
+    >
+    </div>
+  </div>
+
+  <div class="container mx-auto px-4 py-16 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <!-- Company Info -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-indigo-600">dyallab</span>
         </div>
-        <p class="text-gray-400 max-w-md">
-          We transform your ideas to drive your business growth.
+        <p class="text-gray-300 text-lg mb-6 max-w-md leading-relaxed">
+          We transform your ideas to drive your business growth. Technology
+          solutions for the modern era.
         </p>
+        <div class="flex gap-4">
+          <a
+            href="https://www.linkedin.com/company/dyallab/"
+            class="group w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 border border-white/20"
+          >
+            <Linkedin
+              class="h-5 w-5 text-gray-300 group-hover:text-white group-hover:scale-110 transition-all"
+            />
+          </a>
+          <a
+            href="https://github.com/dyallab"
+            class="group w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 border border-white/20"
+          >
+            <Github
+              class="h-5 w-5 text-gray-300 group-hover:text-white group-hover:scale-110 transition-all"
+            />
+          </a>
+          <a
+            href="mailto:contact@dyallab.com.ar"
+            class="group w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-white/20 transition-all duration-300 border border-white/20"
+          >
+            <Mail
+              class="h-5 w-5 text-gray-300 group-hover:text-white group-hover:scale-110 transition-all"
+            />
+          </a>
+        </div>
       </div>
 
+      <!-- Services -->
       <div>
-        <h4 class="text-lg font-bold mb-4">Services</h4>
-        <ul class="space-y-2">
+        <h4 class="text-xl font-bold mb-6 relative inline-block">
+          Services
+          <span
+            class="absolute bottom-0 left-0 w-12 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full"
+          ></span>
+        </h4>
+        <ul class="space-y-3">
           <li>
             <a
               href="#services"
-              class="text-gray-400 hover:text-white transition-colors"
-              >Infrastructure</a
+              class="text-gray-300 hover:text-white transition-colors hover:translate-x-1 inline-block"
             >
+              Infrastructure
+            </a>
           </li>
           <li>
             <a
               href="#services"
-              class="text-gray-400 hover:text-white transition-colors"
-              >Development</a
+              class="text-gray-300 hover:text-white transition-colors hover:translate-x-1 inline-block"
             >
+              Development
+            </a>
           </li>
           <li>
             <a
               href="#services"
-              class="text-gray-400 hover:text-white transition-colors">DevOps</a
+              class="text-gray-300 hover:text-white transition-colors hover:translate-x-1 inline-block"
             >
+              DevOps
+            </a>
           </li>
           <li>
             <a
               href="#services"
-              class="text-gray-400 hover:text-white transition-colors"
-              >Architecture</a
+              class="text-gray-300 hover:text-white transition-colors hover:translate-x-1 inline-block"
             >
+              Architecture
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div>
+        <h4 class="text-xl font-bold mb-6 relative inline-block">
+          Company
+          <span
+            class="absolute bottom-0 left-0 w-12 h-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full"
+          ></span>
+        </h4>
+        <ul class="space-y-3">
+          <li>
+            <a
+              href="#about"
+              class="text-gray-300 hover:text-white transition-colors hover:translate-x-1 inline-block"
+            >
+              About Us
+            </a>
+          </li>
+          <li>
+            <a
+              href="#products"
+              class="text-gray-300 hover:text-white transition-colors hover:translate-x-1 inline-block"
+            >
+              Products
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="text-gray-300 hover:text-white transition-colors hover:translate-x-1 inline-block"
+            >
+              Contact
+            </a>
           </li>
         </ul>
       </div>
     </div>
 
-    <div
-      class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center"
-    >
-      <p class="text-gray-400">
-        © {currentYear} Dyallab. All rights reserved.
-      </p>
-      <div class="flex space-x-4 mt-4 md:mt-0">
-        <a
-          href="https://www.linkedin.com/company/dyallab/"
-          class="text-gray-400 hover:text-white transition-colors"
-        >
-          <Linkedin class="h-5 w-5" />
-        </a>
-        <a
-          href="https://github.com/dyallab"
-          class="text-gray-400 hover:text-white transition-colors"
-        >
-          <Github class="h-5 w-5" />
-        </a>
+    <!-- Bottom Bar -->
+    <div class="border-t border-white/10 pt-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-gray-400 text-sm">
+          © {currentYear} Dyallab. All rights reserved.
+        </p>
+        <div class="flex gap-6 text-sm">
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            Privacy Policy
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white transition-colors">
+            Terms of Service
+          </a>
+        </div>
       </div>
     </div>
   </div>

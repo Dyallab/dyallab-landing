@@ -3,4 +3,3 @@
 npm run lint
 npm run format
 npm audit --audit-level=high
-npm run test

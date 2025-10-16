@@ -1,4 +1,9 @@
 ---
+interface Clients {
+  name: string;
+  image: string;
+}
+
 const clients = [
   { name: "Inti", image: "/images/inti.png" },
   { name: "IoT In Motion", image: "/images/iot.png" },
@@ -7,7 +12,11 @@ const clients = [
     name: "Biblioteca Maria Adriana Casajus",
     image: "/images/maria-adriana-casajus.png",
   },
-];
+  {
+    name: "Provincia ART",
+    image: "/images/prov-art.png",
+  },
+] satisfies Clients[];
 
 const numClients = clients.length;
 ---
