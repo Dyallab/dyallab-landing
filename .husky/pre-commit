@@ -1,5 +1,5 @@
 #!/bin/bash
 
-npm run lint
-npm run format
-npm audit --audit-level=high
+pnpm run lint
+pnpm run format
+pnpm audit --audit-level=high
