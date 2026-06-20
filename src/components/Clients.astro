@@ -1,0 +1,86 @@
+---
+interface Client {
+  name: string;
+  image: string;
+  link?: string;
+  size?: "sm" | "md";
+}
+
+const clients: Client[] = [
+  {
+    name: "Inti",
+    image: "/images/inti.png",
+    link: "https://www.argentina.gob.ar/inti",
+  },
+  {
+    name: "IoT In Motion",
+    image: "/images/iot.png",
+    link: "https://iotinmotion.com.ar",
+  },
+  { name: "UNLP", image: "/images/unlp.png", link: "https://unlp.edu.ar" },
+  {
+    name: "Biblioteca Maria Adriana Casajus",
+    image: "/images/maria-adriana-casajus.png",
+    link: "https://www.instagram.com/biblioteca.adrianacasajus",
+  },
+  {
+    name: "Provincia ART",
+    image: "/images/prov-art.png",
+    link: "https://www.provinciart.com.ar",
+  },
+  {
+    name: "Instituto Web",
+    image: "/images/instituto-web.png",
+    link: "https://www.institutoweb.com.ar",
+  },
+  {
+    name: "BLABS",
+    image: "/images/blabs.png",
+    link: "https://blabsuy.com",
+  },
+  {
+    name: "Rust Lang ES",
+    image: "/images/rustlang-es.png",
+    link: "https://rustlang-es.org",
+    size: "sm",
+  },
+];
+---
+
+<section class="border-t border-dyallab-border py-28">
+  <div class="mx-auto max-w-5xl px-6 text-center">
+    <h2 class="text-lg font-semibold text-gray-900">Collaborated with</h2>
+
+    <div
+      class="mt-12 flex flex-wrap items-center justify-center gap-x-20 gap-y-14"
+    >
+      {
+        clients.map((client) => {
+          const img = (
+            <img
+              src={client.image}
+              alt={client.name}
+              class={
+                client.size === "sm"
+                  ? "h-16 w-auto max-w-[140px] object-contain transition-all duration-500 grayscale opacity-30 hover:grayscale-0 hover:opacity-70"
+                  : "h-24 w-auto max-w-[220px] object-contain transition-all duration-500 grayscale opacity-30 hover:grayscale-0 hover:opacity-70"
+              }
+            />
+          );
+          return client.link ? (
+            <a
+              href={client.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="cursor-pointer"
+            >
+              {img}
+            </a>
+          ) : (
+            img
+          );
+        })
+      }
+    </div>
+  </div>
+</section>

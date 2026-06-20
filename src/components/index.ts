@@ -3,17 +3,7 @@ import Header from "./Header.astro";
 import Hero from "./Hero.astro";
 import Services from "./Services.astro";
 import About from "./About.astro";
-import Contact from "./Contact.astro";
+import Clients from "./Clients.astro";
 import Footer from "./Footer.astro";
-import ClientsCarousel from "./ClientsCarousel.astro";
 
-export {
-  Layout,
-  Header,
-  Hero,
-  Services,
-  About,
-  Contact,
-  Footer,
-  ClientsCarousel,
-};
+export { Layout, Header, Hero, Services, About, Clients, Footer };

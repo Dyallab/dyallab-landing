@@ -2,6 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
+@layer base {
+  * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #f5f2f8;
+    min-height: 100vh;
+    color: #4a4058;
+  }
+
+  ::selection {
+    background-color: rgba(168, 81, 200, 0.15);
+    color: #1a1a2e;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
 }
