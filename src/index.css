@@ -8,8 +8,11 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  html {
+    background-color: #ffffff;
+  }
+
   body {
-    background-color: #f5f2f8;
     min-height: 100vh;
     color: #4a4058;
   }
@@ -24,4 +27,34 @@
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* ── Fondo animado ── */
+@keyframes bgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-animated {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #f8f5fc 20%,
+    #ffffff 40%,
+    #f5f0fa 60%,
+    #ffffff 80%,
+    #f8f5fc 100%
+  );
+  background-size: 600% 600%;
+  animation: bgShift 20s ease infinite;
 }

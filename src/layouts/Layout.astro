@@ -1,4 +1,6 @@
 ---
+import "../index.css";
+
 interface Props {
   title: string;
   description?: string;
@@ -31,8 +33,21 @@ const {
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <!-- Calendly widget styles -->
+    <link
+      href="https://assets.calendly.com/assets/external/widget.css"
+      rel="stylesheet"
+    />
   </head>
-  <body class="bg-dyallab-bg text-dyallab-text-secondary antialiased">
+  <body class="text-dyallab-text-secondary antialiased">
+    <!-- Animated background layer -->
+    <div class="bg-animated" aria-hidden="true"></div>
+
     <slot />
+
+    <!-- Calendly widget -->
+    <script
+      is:inline
+      src="https://assets.calendly.com/assets/external/widget.js"></script>
   </body>
 </html>

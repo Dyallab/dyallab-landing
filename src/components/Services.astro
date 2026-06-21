@@ -1,31 +1,19 @@
 ---
 const services = [
   {
-    name: "Infrastructure",
+    name: "Cloud, Infrastructure & DevOps",
     description:
-      "Server administration, network configuration and system maintenance.",
+      "Designing scalable, high-availability platforms. We automate provisioning through Infrastructure as Code (IaC), optimize network topology, and build secure, self-healing CI/CD pipelines for continuous delivery.",
   },
   {
-    name: "Application Security",
-    description: "Threat modeling, DevSecOps tooling and penetration testing.",
-  },
-  {
-    name: "DevOps & DevSecOps",
-    description: "Security automation, compliance as code and CI/CD security.",
-  },
-  {
-    name: "Architecture Solutions",
+    name: "Application & Product Security",
     description:
-      "Microservices, event-driven architecture and distributed systems.",
+      "End-to-end software security posture. We implement threat modeling, advanced penetration testing, and automated secure code analysis (SAST/DAST/SCA) to embed proactive defense and compliance directly into the engineering lifecycle.",
   },
   {
-    name: "AI & Software Development",
-    description: "AI agents, chatbots, MCP implementation and custom software.",
-  },
-  {
-    name: "Embedded Systems & Hardware",
+    name: "Software Engineering & AI Solutions",
     description:
-      "Embedded development, IoT devices and hardware-software integration.",
+      "Engineering distributed, high-scale systems integrated with production-ready AI. We build event-driven microservices and agentic workflows utilizing MCP to bridge the gap between Large Language Models, custom enterprise software, and secure data layers.",
   },
 ];
 ---
@@ -50,7 +38,7 @@ const services = [
     <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
       {
         services.map((service) => (
-          <div class="rounded-2xl border border-dyallab-border bg-dyallab-bg p-8 transition-colors hover:bg-dyallab-surface sm:p-10">
+          <div class="rounded-2xl border border-dyallab-border bg-white p-8 transition-colors hover:bg-dyallab-surface sm:p-10">
             <h3 class="text-lg font-semibold text-gray-900">{service.name}</h3>
             <p class="mt-3 text-sm leading-relaxed text-dyallab-text-secondary">
               {service.description}
